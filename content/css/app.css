@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'EBGgaramondRegular';
+    font-weight: 400;
+    font-style: normal;
+    src: url(../font/EBGaramond-regular/ebgaramond-regular-webfont.eot);
+    src: url(../font/EBGaramond-regular/ebgaramond-regular-webfont.eot?#iefix) format('embedded-opentype'),
+    url(../font/EBGaramond-regular/ebgaramond-regular-webfont.woff2) format('woff2'),
+    url(../font/EBGaramond-regular/ebgaramond-regular-webfont.woff) format('woff'),
+    url(../font/EBGaramond-regular/ebgaramond-regular-webfont.svg#eb_garamondregular) format('svg'),
+    url(../font/EBGaramond-regular/EBGaramond-Regular.ttf) format('truetype');
+}
+
+body h1{
+    font-family: 'EBGgaramondRegular';
+}
+#menu{
+    line-height: unset;
+    height: 70px;
+}
+#menu li{
+    border: 0;
+    transition: border 150ms,margin 150ms;
+    margin: 9px 6px 9px 6px;
+}
+
+#menu li.activo,#menu li:hover{
+    border: 2px solid #b71c1c;
+    margin: 8px 5px 8px 5px;
+}
+
+.rectangulo-header{
+    border: 2px solid #fff;
+}
+
+#menu li>a{
+    padding: 10px;
+}
+#menu li>a:hover{
+    background-color: unset;
+}
+
+
+/* PARRAFO */
+#cabecera p{
+    display: inline-block;
+    position: relative;
+    font-size: 14pt;
+    margin-top: -5px;
+}
+
+#cabecera p::after,
+#cabecera p::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #fff;
+    top: 14px;
+}
+
+#cabecera p::after{
+    right: -80px;
+}
+
+#cabecera p::before{
+    left: -80px;
+}
+
+#parte-inicial p{
+    font-size: 14pt;
+}
+
+/* COLOR DE TEXTOS */
+.negrita{
+    font-weight: bold;
+}
+
+.marcador{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#fondo-historia{
+    height:auto;
+
+}
+
+#fondo-historia img,#cabecera img{
+    -webkit-filter: brightness(15%);
+    filter: brightness(15%);
+}
+
+#poema img{
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+}
+
+#historia p{
+    font-size: 14pt;
+}
+
+.bold{
+    font-weight: bold;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+#galeria{
+    padding: 15px;
+    padding-top:0 ;
+    height: auto;
+}
+
+#nanogallery2{
+    background-color: #fff;
+    -webkit-box-shadow: 6px 6px 22px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 22px 0px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 22px 0px rgba(0,0,0,0.75);
+}
+
+#poema{
+    height: 100%;
+}
+
+#poema p{
+    text-shadow: 4px 4px 2px rgba(0, 0,0, 1);
+    font-size: 40pt;
+}
+
+#logo{
+    margin-left: 50px;
+    margin-top: 5px;
+    padding: 5px;
+    color: #b71c1c;
+    border: #8b1014 solid 2px;
+}
+
+#derecha{
+    padding-right: 50px;
+}
+
+.sidenav li#titulo{
+    height: 100px;
+    background: url("../img/cabecera.jpg");
+}
+
+.sidenav li:not(:first-of-type):hover,.sidenav li.activo{
+    border: #8b1014 solid 2px;
+
+}
+
+.sidenav li a:hover{
+    background-color: transparent;
+
+}
